@@ -9,3 +9,167 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+:root {
+  --bg-nav-l: #000000;
+  --text-nav: #717171;
+  --green: #adff2f;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.no-small {
+  display: none;
+}
+
+.no-big {
+  display: block;
+}
+
+/* TOP */
+.top nav {
+  color: var(--text-nav);
+  padding: 5px 10px 10px 10px;
+  background-color: var(--bg-nav-l);
+  width: 50px;
+  height: 100vh;
+}
+
+.top nav.col {
+  justify-content: space-between;
+}
+
+.top .col {
+  gap: 20px;
+}
+
+.top nav ul.menu li.row {
+  flex-direction: column;
+}
+
+.top nav ul.utente li.row {
+  flex-direction: column;
+}
+
+.top nav ul.utente .center {
+  align-items: center;
+}
+
+.top nav .utente .icon.download {
+  width: 15px;
+}
+
+.top a {
+  font-weight: bold;
+}
+
+.top nav .utente ul li .icon.profilo {
+  background-color: var(--text-nav);
+}
+
+@media all and (min-width: 576px) {
+  .no-big {
+    display: none;
+  }
+
+  .no-small {
+    display: block;
+  }
+
+  .top nav {
+    padding: 0;
+    width: 230px;
+  }
+
+  .top nav.col {
+    align-items: flex-start;
+  }
+
+  .top .logo {
+    padding: 20px 20px 0 20px;
+  }
+
+  .top .menu.col {
+    gap: 0;
+  }
+
+  .top .menu li {
+    padding: 5px 20px;
+  }
+
+  .top .menu .home {
+    border-left: 2px solid var(--green);
+  }
+
+  .top .playlist {
+    padding: 0 20px;
+  }
+
+  .top .utente {
+    padding: 0 20px 5px 20px;
+  }
+
+  .top nav .icon {
+    width: 20px;
+  }
+
+  .top nav ul.menu li.row {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .top nav ul.utente li.row {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .top nav .utente li:last-child a {
+    color: white;
+  }
+
+  /* playlist */
+  .playlist > a {
+    color: white;
+  }
+
+  .playlist .row {
+    margin-top: 15px;
+  }
+
+  .playlist .row {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .playlist i {
+    font-size: 40px;
+  }
+
+  .playlist ul.col {
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
