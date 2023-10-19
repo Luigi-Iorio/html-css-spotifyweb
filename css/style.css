@@ -55,6 +55,7 @@ img {
   background-color: var(--bg-nav-l);
   width: 50px;
   height: 100vh;
+  overflow: hidden;
 }
 
 .top nav.col {
@@ -158,7 +159,7 @@ img {
   .playlist ul {
     min-height: 100px;
     height: calc(100vh - 450px);
-    overflow-y: scroll;
+    overflow: auto;
   }
 
   .playlist > a {
