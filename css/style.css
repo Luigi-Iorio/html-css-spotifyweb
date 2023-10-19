@@ -77,6 +77,10 @@ button {
   gap: 20px;
 }
 
+.top .high {
+  overflow: hidden;
+}
+
 .top nav ul.menu li.row {
   flex-direction: column;
 }
