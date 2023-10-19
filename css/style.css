@@ -167,10 +167,14 @@ button {
   }
 
   /* playlist */
+  .playlist {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
   .playlist ul {
     min-height: 100px;
-    flex-grow: 1;
-    overflow: auto;
+    overflow-y: scroll;
   }
 
   .playlist > a {
