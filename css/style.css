@@ -424,6 +424,10 @@ button {
   padding: 0 10px;
 }
 
+.bottom .gruppo.row .col:last-child {
+  gap: 10px;
+}
+
 .bottom .row .gruppo.row .col h5 {
   font-size: 10px;
 }
@@ -454,5 +458,11 @@ button {
 @media all and (min-width: 576px) {
   .bottom .img {
     width: 40px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .bottom .gruppo.row .col:last-child {
+    flex-direction: row;
   }
 }
