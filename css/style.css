@@ -213,13 +213,17 @@ button {
   flex-grow: 1;
   background-color: var(--destra);
   color: white;
+  position: relative;
 }
 
 .destra .header {
   height: 90px;
+  width: calc(100% - 50px);
   background-color: var(--bg-header);
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .destra .header.col {
@@ -232,7 +236,8 @@ button {
 }
 
 .destra .content {
-  margin: 20px 20px 0 20px;
+  padding-top: 110px;
+  margin: 0 20px 0 20px;
 }
 
 .destra .content ul.menu.row {
@@ -305,6 +310,10 @@ button {
 }
 
 @media all and (min-width: 576px) {
+  .destra .header {
+    width: calc(100% - 230px);
+  }
+
   .destra .content .menu.row li a {
     width: calc((100% - 20px) / 3);
   }
