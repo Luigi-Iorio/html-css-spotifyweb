@@ -179,6 +179,7 @@ button {
 
   .playlist ul {
     min-height: 100px;
+    height: 100%;
     overflow-y: auto;
   }
 
