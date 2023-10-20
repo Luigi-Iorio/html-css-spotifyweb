@@ -58,6 +58,11 @@ button {
   padding: 10px 30px;
 }
 
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 /* TOP */
 .top nav {
   color: var(--text-nav);
@@ -100,6 +105,10 @@ button {
 
 .top a {
   font-weight: bold;
+}
+
+.top a:hover {
+  color: white;
 }
 
 .icon.profilo {
@@ -204,11 +213,13 @@ button {
 
   .playlist .row {
     margin-top: 15px;
-  }
-
-  .playlist .row {
     gap: 10px;
     align-items: center;
+  }
+
+  .playlist .row:hover {
+    color: white;
+    cursor: pointer;
   }
 
   .playlist i {
@@ -273,6 +284,10 @@ button {
   text-transform: uppercase;
 }
 
+.destra .content .menu.row li a:hover {
+  color: white;
+}
+
 .destra .content .menu li:first-child::after {
   content: "";
   clear: both;
@@ -307,10 +322,34 @@ button {
 
 .destra .content .list .cont.row {
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .destra .content .list h3 {
   margin-bottom: 30px;
+}
+
+.destra .content .list.recently .box .img {
+  position: relative;
+}
+
+.destra .content .list.recently .box .img i {
+  display: none;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.destra .content .list.recently .box .img .effetto {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000063;
 }
 
 .destra .content .list.creato h3 {
@@ -326,6 +365,18 @@ button {
   padding: 5px 10px;
   text-align: center;
   width: calc((100% - 20px) / 2);
+}
+
+.destra .content .list .cont.row .box:hover {
+  cursor: pointer;
+}
+
+.destra .content .list .cont.row .box:hover i {
+  display: block;
+}
+
+.destra .content .list .cont.row .box:hover .effetto {
+  display: block;
 }
 
 .destra .content .list .cont.row .box h4 {
@@ -451,6 +502,33 @@ button {
   color: var(--text-nav);
 }
 
+.bottom .row .gruppo.row .col h6:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+.fa-heart,
+.fa-folder {
+  color: var(--text-nav);
+}
+
+.bottom i:hover {
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  color: white;
+}
+
+.fa-folder:hover {
+  color: white;
+}
+
+.bottom .fa-circle-play:hover {
+  transform: scale(1.3);
+}
+
 .tempo {
   position: relative;
   width: 60%;
@@ -468,6 +546,26 @@ button {
   height: 5px;
   background-color: white;
   border-radius: 20px;
+}
+
+.tempo:hover {
+  cursor: pointer;
+}
+
+.tempo:hover .effettivo {
+  background-color: var(--green);
+}
+
+.tempo:hover .effettivo:after {
+  content: "";
+  clear: both;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  top: -2px;
+  left: 95%;
 }
 
 @media all and (min-width: 576px) {
