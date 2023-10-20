@@ -253,12 +253,31 @@ button {
 .destra .content .menu.row li a {
   padding: 10px 10px;
   width: calc(100% / 4 - 20px);
-  font-size: 10px;
+  font-size: 13px;
   color: var(--text-nav);
+  text-transform: uppercase;
 }
 
-.destra .content .menu li:first-child {
-  border-bottom: 2px solid var(--green);
+.destra .content .menu li:first-child::after {
+  content: "";
+  clear: both;
+  display: block;
+  width: 30%;
+  height: 5px;
+  background-color: var(--green);
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.destra .content .menu li::after {
+  content: "";
+  clear: both;
+  display: block;
+  width: 30%;
+  height: 5px;
+  background-color: transparent;
+  border-radius: 20px;
+  margin: 0 auto;
 }
 
 /* recently - creato per - artisti */
