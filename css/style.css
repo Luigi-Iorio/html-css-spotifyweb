@@ -122,6 +122,10 @@ button {
     display: none;
   }
 
+  .top nav .icon:not(.profilo) {
+    width: 20px;
+  }
+
   .no-small {
     display: block;
   }
