@@ -86,8 +86,8 @@ button {
   flex-direction: column;
 }
 
-.top nav ul.utente li.row {
-  flex-direction: column;
+.top nav ul.utente {
+  align-items: center;
 }
 
 .top nav ul.utente .center {
@@ -102,8 +102,19 @@ button {
   font-weight: bold;
 }
 
-.top nav .utente ul li .icon.profilo {
+.icon.profilo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
   background-color: var(--text-nav);
+}
+
+.icon.profilo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 @media all and (min-width: 576px) {
@@ -152,13 +163,13 @@ button {
     padding: 0 20px 5px 20px;
   }
 
-  .top nav .icon {
-    width: 20px;
-  }
-
   .top nav ul.menu li.row {
     flex-direction: row;
     gap: 10px;
+  }
+
+  .top nav ul.utente {
+    align-items: unset;
   }
 
   .top nav ul.utente li.row {
